@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,12 @@
 		4C03EBEA251E2EEB000C1541 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C03EBE9251E2EEB000C1541 /* SearchResultViewController.swift */; };
 		4C03EBEC251E2F2E000C1541 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C03EBEB251E2F2E000C1541 /* PostEditorViewController.swift */; };
 		4C03EBEE251E2F45000C1541 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C03EBED251E2F45000C1541 /* PublishPostViewController.swift */; };
+		4C3E2519251F771F00C73E5A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E2518251F771F00C73E5A /* DatabaseManager.swift */; };
+		4C3E251B251F780F00C73E5A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E251A251F780F00C73E5A /* AuthManager.swift */; };
+		4C3E251D251F785A00C73E5A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E251C251F785A00C73E5A /* StorageManager.swift */; };
+		4C3E58622520B95400714618 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E58612520B95400714618 /* Extensions.swift */; };
+		4CDBB42C251F6E8C00D12DF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDBB42B251F6E8C00D12DF6 /* GoogleService-Info.plist */; };
+		B2F5BDFEC333D35AA23B6C2D /* Pods_IGClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACCB1F70E37CA91BB72CC6 /* Pods_IGClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,14 @@
 		4C03EBE9251E2EEB000C1541 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		4C03EBEB251E2F2E000C1541 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		4C03EBED251E2F45000C1541 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		4C3E2518251F771F00C73E5A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		4C3E251A251F780F00C73E5A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		4C3E251C251F785A00C73E5A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		4C3E58612520B95400714618 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CDBB42B251F6E8C00D12DF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77ACCB1F70E37CA91BB72CC6 /* Pods_IGClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA64D81D57BB28502E29D11 /* Pods-IGClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGClone.release.xcconfig"; path = "Target Support Files/Pods-IGClone/Pods-IGClone.release.xcconfig"; sourceTree = "<group>"; };
+		F86B5E89ABBD81C2F8C69E8B /* Pods-IGClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGClone.debug.xcconfig"; path = "Target Support Files/Pods-IGClone/Pods-IGClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F5BDFEC333D35AA23B6C2D /* Pods_IGClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +87,8 @@
 			children = (
 				4C03EBB2251E296B000C1541 /* IGClone */,
 				4C03EBB1251E296B000C1541 /* Products */,
+				74BC3C2211D86781B8BD2E3A /* Pods */,
+				55A124DD4776639ADF45346B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +103,10 @@
 		4C03EBB2251E296B000C1541 /* IGClone */ = {
 			isa = PBXGroup;
 			children = (
-				4C03EBCE251E2B67000C1541 /* Controllers */,
 				4C03EBCC251E2B30000C1541 /* Resources */,
+				4C03EBCE251E2B67000C1541 /* Controllers */,
 				4C03EBCB251E2B25000C1541 /* Models */,
 				4C03EBCA251E2B12000C1541 /* Views */,
-				4C03EBC4251E296C000C1541 /* Info.plist */,
 				4C03EBBC251E296B000C1541 /* IGClone.xcdatamodeld */,
 			);
 			path = IGClone;
@@ -115,8 +131,14 @@
 		4C03EBCC251E2B30000C1541 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CDBB42B251F6E8C00D12DF6 /* GoogleService-Info.plist */,
+				4C03EBC4251E296C000C1541 /* Info.plist */,
 				4C03EBB5251E296B000C1541 /* SceneDelegate.swift */,
 				4C03EBB3251E296B000C1541 /* AppDelegate.swift */,
+				4C3E2518251F771F00C73E5A /* DatabaseManager.swift */,
+				4C3E251A251F780F00C73E5A /* AuthManager.swift */,
+				4C3E251C251F785A00C73E5A /* StorageManager.swift */,
+				4C3E58612520B95400714618 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,14 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				4C03EBDA251E2E05000C1541 /* Onboarding */,
-				4C03EBDF251E2E71000C1541 /* PostViewController.swift */,
-				4C03EBE1251E2E93000C1541 /* EditProfileViewController.swift */,
-				4C03EBE3251E2EAE000C1541 /* SettingsViewController.swift */,
-				4C03EBE5251E2EC5000C1541 /* ListViewController.swift */,
-				4C03EBE7251E2EDC000C1541 /* SearchViewController.swift */,
-				4C03EBE9251E2EEB000C1541 /* SearchResultViewController.swift */,
-				4C03EBEB251E2F2E000C1541 /* PostEditorViewController.swift */,
-				4C03EBED251E2F45000C1541 /* PublishPostViewController.swift */,
+				4C3E2517251F763300C73E5A /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -176,6 +191,38 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		4C3E2517251F763300C73E5A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4C03EBDF251E2E71000C1541 /* PostViewController.swift */,
+				4C03EBE1251E2E93000C1541 /* EditProfileViewController.swift */,
+				4C03EBE3251E2EAE000C1541 /* SettingsViewController.swift */,
+				4C03EBE5251E2EC5000C1541 /* ListViewController.swift */,
+				4C03EBE7251E2EDC000C1541 /* SearchViewController.swift */,
+				4C03EBE9251E2EEB000C1541 /* SearchResultViewController.swift */,
+				4C03EBEB251E2F2E000C1541 /* PostEditorViewController.swift */,
+				4C03EBED251E2F45000C1541 /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		55A124DD4776639ADF45346B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77ACCB1F70E37CA91BB72CC6 /* Pods_IGClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74BC3C2211D86781B8BD2E3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F86B5E89ABBD81C2F8C69E8B /* Pods-IGClone.debug.xcconfig */,
+				9BA64D81D57BB28502E29D11 /* Pods-IGClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C03EBC7251E296C000C1541 /* Build configuration list for PBXNativeTarget "IGClone" */;
 			buildPhases = (
+				7EB921DC2EB61045EE1E57B5 /* [CP] Check Pods Manifest.lock */,
 				4C03EBAC251E296B000C1541 /* Sources */,
 				4C03EBAD251E296B000C1541 /* Frameworks */,
 				4C03EBAE251E296B000C1541 /* Resources */,
+				9FC44A1F039D48664D0A90CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,11 +285,54 @@
 			files = (
 				4C03EBC3251E296C000C1541 /* LaunchScreen.storyboard in Resources */,
 				4C03EBC0251E296C000C1541 /* Assets.xcassets in Resources */,
+				4CDBB42C251F6E8C00D12DF6 /* GoogleService-Info.plist in Resources */,
 				4C03EBBB251E296B000C1541 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EB921DC2EB61045EE1E57B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC44A1F039D48664D0A90CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGClone/Pods-IGClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGClone/Pods-IGClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGClone/Pods-IGClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C03EBAC251E296B000C1541 /* Sources */ = {
@@ -250,17 +342,21 @@
 				4C03EBE8251E2EDC000C1541 /* SearchViewController.swift in Sources */,
 				4C03EBDC251E2E2A000C1541 /* LoginViewController.swift in Sources */,
 				4C03EBB8251E296B000C1541 /* HomeViewController.swift in Sources */,
+				4C3E251D251F785A00C73E5A /* StorageManager.swift in Sources */,
 				4C03EBBE251E296B000C1541 /* IGClone.xcdatamodeld in Sources */,
 				4C03EBEC251E2F2E000C1541 /* PostEditorViewController.swift in Sources */,
 				4C03EBD1251E2D14000C1541 /* ExploreViewController.swift in Sources */,
 				4C03EBDE251E2E45000C1541 /* RegistrationViewController.swift in Sources */,
 				4C03EBD5251E2D66000C1541 /* NotificationViewController.swift in Sources */,
+				4C3E58622520B95400714618 /* Extensions.swift in Sources */,
 				4C03EBE6251E2EC5000C1541 /* ListViewController.swift in Sources */,
+				4C3E251B251F780F00C73E5A /* AuthManager.swift in Sources */,
 				4C03EBB4251E296B000C1541 /* AppDelegate.swift in Sources */,
 				4C03EBEE251E2F45000C1541 /* PublishPostViewController.swift in Sources */,
 				4C03EBB6251E296B000C1541 /* SceneDelegate.swift in Sources */,
 				4C03EBE2251E2E93000C1541 /* EditProfileViewController.swift in Sources */,
 				4C03EBD7251E2D74000C1541 /* ProfileViewController.swift in Sources */,
+				4C3E2519251F771F00C73E5A /* DatabaseManager.swift in Sources */,
 				4C03EBE4251E2EAE000C1541 /* SettingsViewController.swift in Sources */,
 				4C03EBD3251E2D38000C1541 /* CameraViewController.swift in Sources */,
 				4C03EBEA251E2EEB000C1541 /* SearchResultViewController.swift in Sources */,
@@ -406,11 +502,13 @@
 		};
 		4C03EBC8251E296C000C1541 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86B5E89ABBD81C2F8C69E8B /* Pods-IGClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6T48K39RQ;
-				INFOPLIST_FILE = IGClone/Info.plist;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = IGClone/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,11 +522,13 @@
 		};
 		4C03EBC9251E296C000C1541 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA64D81D57BB28502E29D11 /* Pods-IGClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6T48K39RQ;
-				INFOPLIST_FILE = IGClone/Info.plist;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = IGClone/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
