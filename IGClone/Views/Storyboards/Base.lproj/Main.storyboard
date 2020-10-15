@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="6f7-Ef-lWN" kind="relationship" relationship="viewControllers" id="2x6-Kf-9gU"/>
@@ -33,7 +33,7 @@
         <scene sceneID="vrf-Bd-NNh">
             <objects>
                 <navigationController id="5fD-yN-Bwy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="g3i-K7-Ab6"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="g3i-K7-Ab6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I58-dj-S7h">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,11 +46,11 @@
             </objects>
             <point key="canvasLocation" x="-739" y="265"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="6GK-sk-wec">
             <objects>
                 <navigationController id="YGD-Qe-7Tf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" id="HeZ-Hh-XS1"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="HeZ-Hh-XS1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ics-bN-q73">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -160,11 +160,11 @@
             </objects>
             <point key="canvasLocation" x="-739" y="990"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Wy9-DR-4jW">
             <objects>
                 <navigationController id="5Lf-D9-ZJp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="bell" catalog="system" id="VgO-kc-i4X"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="VgO-kc-i4X"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vCR-4q-beN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -196,9 +196,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
