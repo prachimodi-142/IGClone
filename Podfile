@@ -7,6 +7,7 @@ target 'IGClone' do
 
 pod 'Appirater'
   # Pods for IGClone
+pod 'SDWebImage'
 
 #Firebase
 pod 'Firebase/Core'

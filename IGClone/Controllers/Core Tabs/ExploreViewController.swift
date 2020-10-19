@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ExploreViewController: UIViewController {
 
         
@@ -17,10 +19,13 @@ class ExploreViewController: UIViewController {
         return searchBar
     }()
     
+   
+    
     private var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.topItem?.titleView = searchBar
         let layout = UICollectionViewFlowLayout()
